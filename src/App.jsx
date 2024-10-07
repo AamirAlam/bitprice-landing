@@ -29,7 +29,7 @@ function App() {
                 <a href="#" className="cta-button">Start Saving & Winning</a>
             </section>
 
-            <section id="how-it-works" className="section">
+            {/* <section id="how-it-works" className="section">
                 <h2>How BitPrize Works</h2>
                 <div className="card-grid">
                     <div className="card">
@@ -45,7 +45,50 @@ function App() {
                         <p>The yield is distributed as prizes in weekly drawings.</p>
                     </div>
                 </div>
-            </section>
+            </section> */}
+
+        <section id="how-it-works" className="section">
+            <h2>How BitPrize Works</h2>
+            <div className="card-grid">
+                <div className="card">
+                    <h3>1. Deposit Bitcoin</h3>
+                    {/* <!-- Insert Bitcoin Piggy Bank illustration here --> */}
+                    <div className="bitcoin-piggy-bank">
+
+                    <div className="piggy-body"></div>
+                    <div className="piggy-ear"></div>
+                    <div className="piggy-nose"></div>
+                    <div className="bitcoin-symbol">₿</div>
+                    </div>
+                    <p>Safely deposit your BTC into the BitPrize smart contract.</p>
+                </div>
+                <div className="card">
+                    <h3>2. Earn Yield</h3>
+                    {/* <!-- Insert Yield Growth Chart illustration here --> */}
+                    <div className="yield-growth-chart">
+
+                    <div className="chart-bar"></div>
+                    <div className="chart-line"></div>
+                    <div className="chart-dot"></div>
+                    </div>
+                    <p>Your deposited BTC earns yield through secure DeFi protocols.</p>
+                </div>
+                <div className="card">
+                    <h3>3. Win Prizes</h3>
+                    {/* <!-- Insert Prize Wheel illustration here --> */}
+                    <div className="prize-wheel">
+                    <div className="wheel">
+                    <div className="segment"></div>
+                    <div className="segment"></div>
+                    <div className="segment"></div>
+                    <div className="segment"></div>
+                  </div>
+                  <div className="pointer"></div>
+                    </div>
+                    <p>The yield is distributed as prizes in weekly drawings.</p>
+                </div>
+            </div>
+        </section>
 
             <section id="prizes" className="section">
                 <h2>Prize Pool</h2>
