@@ -1,0 +1,141 @@
+       /* Reset and base styles */
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff7ed;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #f97316;
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .cta-button {
+        background-color: white;
+        color: #f97316;
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Main content styles */
+    main {
+        padding: 3rem 0;
+    }
+    h1, h2, h3 {
+        color: #c2410c;
+        margin-bottom: 1rem;
+    }
+    .hero {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .section {
+        margin-bottom: 4rem;
+    }
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    .card {
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .prize-pool {
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .faq-item {
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: #7c2d12;
+        color: white;
+        padding: 3rem 0;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+    .footer-grid h4 {
+        margin-bottom: 1rem;
+    }
+    .footer-grid ul {
+        list-style-type: none;
+    }
+    .footer-grid ul li {
+        margin-bottom: 0.5rem;
+    }
+    .footer-grid ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #92400e;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .card-grid, .stats-grid, .footer-grid {
+            grid-template-columns: 1fr;
+        }
+    }
